@@ -90,7 +90,7 @@
   </header>
 
 
-<div class="entry-content">Today I finally found some time to move my web bookmarks from my personal <div style="display: inline;color:#000CED;"><u><a href="http://del.icio.us/">del.icio.us</a></u></div > clone (based on the open source tool <div style="display: inline;color:#000CED;"><u><a href="http://scuttle.org/">Scuttle</a></u></div >) to - well, you might have guessed it already: <div style="display: inline;color:#000CED;"><u><a href="http://del.icio.us/">del.icio.us</a></u></div >.<br />To be honest: I did not plan at all to live that long with a disconnected (or should I call it &#8220;unsocial&#8221;?) web-based bookmark application. Actually some time ago I just &#8220;played&#8221; a little with open source social bookmark toolsto figure out whether there is a good one to be used for a closed user group use case.<br />But back to the topic: so today I did use the approach <div style="display: inline;color:#000CED;"><u><a href="http://the.syntactic-sugar.org/article/470/scuttle2del-icio-us">outlined by Markus Geiger</a></u></div > to move my bookmarks to <div style="display: inline;color:#000CED;"><u><a href="http://del.icio.us/">del.icio.us</a></u></div >:<br /><ul class="(null)"><li>XML export from Scuttle using the build-in <em>api/post_all.php</em> feature&#8230;</li><li>&#8230;convert to XML that matches the del.icio.us APIs arguments (using a XSL(T) stylesheet for the transformation&#8230;</li><li>&#8230; and a Python script to process the XML against <em>api.del.icio.us</em>.</li></ul><br />Besides some small problems I encountered during the import (had to restart the script several times with reduced amount of data) the transition went very well! Thanks Markus!<br />But what a surprise when I tried to review the result in my browser <div style="display: inline;color:#000CED;"><u><a href="http://del.icio.us/">del.icio.us</a></u></div >:<br /><br /><img class="imageStyle" alt="screenshot_yahoo_del.icio.us_blocked_400x350.shkl" src="http://bara-vara.de/journal/files/ups-mass-data-import-using-delicious_1.png" width="400" height="350"/><br /><br />Ok, I have to be fair:<br /><ul class="disc"><li>I did upload ca. 500 bookmarks at once!!!!</li><li>&#8230; and the Yahoo! support team did remove the <em>temporary blocking</em> in response to my support request within 10 minutes.</li></ul>So not big thing after all - but quite interesting from a <strong>Web Worker point of view</strong>:<br />mass data manipulation might be considered <strong>mal.icio.us</strong> in a <em>Software as a Service</em> scenario!
+<div class="entry-content">Today I finally found some time to move my web bookmarks from my personal <div style="display: inline;color:#000CED;"><u><a href="http://del.icio.us/">del.icio.us</a></u></div > clone (based on the open source tool <div style="display: inline;color:#000CED;"><u><a href="http://scuttle.org/">Scuttle</a></u></div >) to - well, you might have guessed it already: <div style="display: inline;color:#000CED;"><u><a href="http://del.icio.us/">del.icio.us</a></u></div >.<br />To be honest: I did not plan at all to live that long with a disconnected (or should I call it &#8220;unsocial&#8221;?) web-based bookmark application. Actually some time ago I just &#8220;played&#8221; a little with open source social bookmark toolsto figure out whether there is a good one to be used for a closed user group use case.<br />But back to the topic: so today I did use the approach <div style="display: inline;color:#000CED;"><u><a href="http://the.syntactic-sugar.org/article/470/scuttle2del-icio-us">outlined by Markus Geiger</a></u></div > to move my bookmarks to <div style="display: inline;color:#000CED;"><u><a href="http://del.icio.us/">del.icio.us</a></u></div >:<br /><ul class="(null)"><li>XML export from Scuttle using the build-in <em>api/post_all.php</em> feature&#8230;</li><li>&#8230;convert to XML that matches the del.icio.us APIs arguments (using a XSL(T) stylesheet for the transformation&#8230;</li><li>&#8230; and a Python script to process the XML against <em>api.del.icio.us</em>.</li></ul><br />Besides some small problems I encountered during the import (had to restart the script several times with reduced amount of data) the transition went very well! Thanks Markus!<br />But what a surprise when I tried to review the result in my browser <div style="display: inline;color:#000CED;"><u><a href="http://del.icio.us/">del.icio.us</a></u></div >:<br /><br /><img class="imageStyle" alt="screenshot_yahoo_del.icio.us_blocked_400x350.shkl" src="/rw-journal/files/ups-mass-data-import-using-delicious_1.png" width="400" height="350"/><br /><br />Ok, I have to be fair:<br /><ul class="disc"><li>I did upload ca. 500 bookmarks at once!!!!</li><li>&#8230; and the Yahoo! support team did remove the <em>temporary blocking</em> in response to my support request within 10 minutes.</li></ul>So not big thing after all - but quite interesting from a <strong>Web Worker point of view</strong>:<br />mass data manipulation might be considered <strong>mal.icio.us</strong> in a <em>Software as a Service</em> scenario!
 </div>
 
 
@@ -212,6 +212,19 @@ Moving the world off Internet Explorer 6</a>
 
 </footer>
   
+
+<script type="text/javascript">
+      var disqus_shortname = 'semanticdreamer';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 

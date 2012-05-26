@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://semanticdreamer.github.com
+title: Semantic Dreamer
+subtitle: A little Dream goes a long way...
+author: Matthias Geisler
 simple_search: http://google.com/search
 description:
 
@@ -64,7 +64,7 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: matthiasgeisler
 twitter_tweet_count: 4
 twitter_show_replies: false
 twitter_follow_button: true
@@ -85,7 +85,7 @@ pinboard_user:
 pinboard_count: 3
 
 # Delicious
-delicious_user:
+delicious_user: semanticdreamer
 delicious_count: 3
 
 # Disqus Comments

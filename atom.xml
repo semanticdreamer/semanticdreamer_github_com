@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Semantic Dreamer]]></title>
+  <link href="http://semanticdreamer.github.com/atom.xml" rel="self"/>
+  <link href="http://semanticdreamer.github.com/"/>
+  <updated>2012-05-26T12:59:17+00:00</updated>
+  <id>http://semanticdreamer.github.com/</id>
+  <author>
+    <name><![CDATA[Matthias Geisler]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>

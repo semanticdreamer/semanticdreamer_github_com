@@ -1,0 +1,50 @@
+--- 
+layout: post
+title: How-to Install Rails 3.0 Beta on OS 10.5.8 Leopard
+tags: 
+- Apple und Mac OS X
+- Open Source
+- Software Engineering
+- Web Development
+status: publish
+type: post
+published: true
+meta: {}
+
+---
+<p>While I did most of my recent web dev projects in PHP5 I still follow the development of <a href="http://rubyonrails.org/">Ruby on Rails</a> ...on it's path to a stable version 3.0 release.</p>
+
+<p>So no wonder that I had to get my hands dirty with the just recently released <a href="http://weblog.rubyonrails.org/2010/2/5/rails-3-0-beta-release/">Rails 3.0 Beta</a>.</p>
+
+<p>While I still own a 12" PowerBook with OS X 10.5.8 Leopard (latest OS X PPC release) I needed to get rails-3.0.0.beta running on this machine - of course ;-)</p>
+
+<p align="center"><img src="http://semanticdreamer.com/wp-content/uploads/2010/02/Finder.png" alt="Finder.png" border="0" width="510" height="430" /></p>
+
+<p><strong>1. Upgrade to Ruby 1.8.7 with RubyGems</strong></p>
+
+<p>As at least Ruby <strong>1.8.7</strong> is required by Rails 3.0 I decided to use <a href="http://www.macports.org/">MacPorts</a> (prerequisite!) to upgrade Ruby version 1.8.6 as shipped with OS X Leopard.</p>
+
+<code>sudo port install ruby rb-rubygems</code>
+
+<code>sudo gem update --system</code>
+
+<code>source ~/.profile</code>
+
+<code>Satellit:~ matthias$  ruby -v</code>
+<code>ruby 1.8.7 (2009-06-12 patchlevel 174) [powerpc-darwin9]</code>
+
+<p><strong>2. Install Rails 3.0 Beta (rails-3.0.0.beta) along with the required dependencies</strong></p>
+
+<code>sudo gem install i18n tzinfo builder memcache-client rack rack-test rack-mount erubis mail text-format thor bundler sqlite3-ruby</code>
+
+<code>sudo gem install rails --pre</code>
+
+<p><strong>3. Create Rails app. and start the server</strong></p>
+
+<code>Satellit:~ matthias$ rails rails3beta-test</code>
+
+<code>Satellit:~ matthias$ cd rails3beta-test</code>
+
+<code>Satellit:~ matthias$ rails server</code>
+
+<p>Inspired by <a href="http://itigi.github.com/posts/2010/02/08/Ruby-on-Rails-3.0-beta-on-Mac-OS-10.5.8/">Silumesii Maboshe</a>.</p>

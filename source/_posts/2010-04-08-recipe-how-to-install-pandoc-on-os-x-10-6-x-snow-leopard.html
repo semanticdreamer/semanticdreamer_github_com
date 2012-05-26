@@ -1,0 +1,32 @@
+--- 
+layout: post
+title: "Recipe: How-to install Pandoc on OS X 10.6.x (Snow Leopard)"
+tags: 
+- Apple und Mac OS X
+- Open Source
+- Open Web Standards
+- Software Engineering
+- Web Development
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+<p>In case you wonder how-to install <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>, the "<cite>universal document converter</cite>" on OS X Snow Leopard...</p>
+
+<p>... the secret sauce: go for <a href="http://hackage.haskell.org/platform/">Haskell Platform</a> installer instead of following your standard (assumption!) installation approach using <a href="http://www.macports.org/">MacPorts</a>.</p>
+
+<p>The steps:</p>
+
+<ol>
+	<li>First install <a href="http://hackage.haskell.org/platform/">Haskell Platform</a>.</li>
+	<li><code>cabal update</code></li>
+	<li><code>cabal install cabal-install</code></li>
+	<li><code>cabal install pandoc</code></li>
+	<li>Update your <em>~/.profile</em> file with <code>export PATH=/Users/[USERNAME]/.cabal/bin:$PATH</code> and read in with <code>source ~/.profile</code>.</li>
+</ol>
+
+<p>What is Pandoc? Great you asked! ;)</p>
+
+<blockquote><cite>Pandoc can read markdown and (subsets of) reStructuredText, HTML, and LaTeX, and it can write plain text, markdown, reStructuredText, HTML, LaTeX, ConTeXt, PDF, RTF, DocBook XML, OpenDocument XML, ODT, GNU Texinfo, MediaWiki markup, groff man pages, and S5 HTML slide shows. PDF output (via LaTeX) is also supported with the included markdown2pdf wrapper script.</cite><br/>-- Source and more details: <a href="http://johnmacfarlane.net/pandoc/">johnmacfarlane.net/pandoc</a></blockquote>

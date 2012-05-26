@@ -1,0 +1,35 @@
+--- 
+layout: post
+title: "Recipe: How-to install CouchDB 0.11.0 from source on OS X"
+tags: 
+- Apple und Mac OS X
+- nosql
+- Open Source
+- Software Engineering
+- Web Development
+status: publish
+type: post
+published: true
+meta: {}
+
+---
+<p>Prerequisite: <a href="http://www.macports.org/">MacPorts</a> installed and <a href="http://subversion.tigris.org/">SVN client</a> at hand - I prefer a UI and therefore use <a href="http://versionsapp.com/">Versions</a>.</p>
+
+<ul>
+			<li><code>sudo port install autoconf automake libtool</code></li>
+			<li><code>sudo port install icu erlang spidermonkey curl</code></li>
+			<li><code>svn co http://svn.apache.org/repos/asf/couchdb/tags/0.11.0 couchdb-0.11.0-src</code></li>
+			<li><code>cd couchdb-0.11.0-src</code></li>
+			<li><code>./bootstrap</code></li>
+			<li><code>./configure</code><br/><code>>> You have configured Apache CouchDB, time to relax.</code></li>
+			<li><code>make && sudo make install</code><br/><code>>> You have installed Apache CouchDB, time to relax.</code></li>
+			<li>Start the CouchDB server by running: <code>sudo -i couchdb -b</code><br/><code>>> Apache CouchDB has started, time to relax.</code></li>
+			<li>To check that everything has worked, point your web browser to: <a href="http://127.0.0.1:5984/_utils/index.html">http://127.0.0.1:5984/_utils/index.html</a></li>
+</ul>
+
+<p>Usefull resources:</p>
+
+<ul>
+	<li><a href="http://books.couchdb.org/relax/appendix/installing-from-source">CouchDB: The Definitive Guide - Part VI. Appendix Installing from Source</a></li>
+	<li><a href="http://couchdb.apache.org/community/code.html">Apache Couch DB Source Code</a></li>
+</ul>

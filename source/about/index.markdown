@@ -7,45 +7,53 @@ sharing: true
 footer: true
 ---
 
-<p>
-	Semantic Dreamer is a digital lifestyle journal slightly devoted to open source software, open web standards, the semantic web and next generation internet technology, written by <a class="email fn" href="http://scr.im/matthias" rel="me">Matthias Geisler</a>.
-</p><!-- Start hcard -->
-<div id="hcard-Matthias-Geisler" class="vcard">
+<!-- Start hcard -->
+<div id="hcard-Matthias-Geisler" class="vcard aboutblog">
 	<!-- Start About This Blog -->
 	<p>
-		Semantic Dreamer is a digital lifestyle journal slightly devoted to open source software, open web standards, the semantic web and next generation internet technology, written by <a class="email fn" href="http://scr.im/matthias" rel="me">Matthias Geisler</a>. Powered by <a href="http://octopress.org">Octopress</a>.
+		Semantic Dreamer is a digital lifestyle journal written by <a class="email fn" href="http://scr.im/matthias" rel="me">Matthias Geisler</a>.</p>
+	<p>Selection of main topics: open Source software (OSS), open web standards, the semantic web, internet technology in general, getting things done (GTD).</p>
+	<p>The website is powered by <a href="http://octopress.org">Octopress</a> (a blogging framework for <a href="http://github.com/mojombo/jekyll">Jekyll</a>, the blog aware static site generator powering <a href="http://pages.github.com/">GitHub Pages</a>) and hosted on <a href="http://github.com/">GitHub</a>.
 	</p><!-- End About This Blog -->
 	<!-- Start About Me -->
-	<h4>
-		About me
-	</h4>
-	<p>
-		<img src="http://semanticdreamer.com/wp-content/uploads/2009/10/matthias2_128x128.jpg" alt="Matthias Geisler" title="matthias2_128x128" width="105" height="105" align="left" style="padding-right: 5px;"><a class="url" href="http://matthiasgeisler.net" rel="me">I’m a eBusiness Project Manager at</a> <a href="http://www.emmos.de" title="Erwin Müller Mail Order Solutions GmbH &amp; Co. KG">EMMOS</a>, <span class="adr">living and working in/ near <span class="locality">Donauwoerth</span>, <span class="country-name">Germany</span>.</span>
-	</p>
-	<p>
-		<a href="http://www.xing.com/profile/Matthias_Geisler" rel="me"><img src="http://www.xing.com/img/buttons/9_de_btn.gif" alt="XING" border="0" height="15" width="80"></a>&nbsp;<a href="http://www.linkedin.com/in/matthiasgeisler"><img src="http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.gif" alt="View Matthias Geisler's profile on LinkedIn" border="0" height="15" width="80"></a><br>
-		<a href="http://www.eosdirectory.com/" title="EOS Directory"><img src="http://semanticdreamer.com/wp-content/uploads/2009/06/eos-directory_badge89x25.gif" alt="Enterprise Open Source Directory (EOS Directory) - identify and select Open Source technologies" height="25" width="89"></a>
-	</p><!-- End About Me -->
+	<div class="aboutme">
+		<h2>
+			About me
+		</h2>
+		<p class="authorname">
+			Matthias Geisler
+		</p>
+		<div class="authordepiction">
+			<a class="url" href="http://matthiasgeisler.net/" rel="me"><img src="{{ root_url }}/wp-content/uploads/2009/10/matthias2_128x128.jpg" alt="Matthias Geisler" title="matthias2_128x128" width="105" height="105"/></a>
+		</div>
+		<div class="authorinfos">
+			<p class="subline">
+				<a class="url" href="http://matthiasgeisler.net/" rel="me">I’m a Technical Architect/ Project Manager</a> <span class="adr">living and working in/ near <span class="locality">Donauwoerth</span>, <span class="country-name">Germany</span>.</span>
+			</p>
+			<ul class="webprofiles">
+				<li><a href="http://www.xing.com/profile/Matthias_Geisler" rel="me"><img src="http://www.xing.com/img/buttons/9_de_btn.gif" alt="XING" height="15" width="80"></a></li>
+				<li><a href="http://www.linkedin.com/in/matthiasgeisler"><img src="http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.gif" alt="View Matthias Geisler's profile on LinkedIn" height="15" width="80"></a></li>
+			</ul>
+			</p>
+		</div>
+	</div><!-- End About Me -->
 </div><!-- End hcard -->
 <!-- Start About The Book -->
-<div class="aboutbook bookfacts vevent">
-	<h4>
+<div class="aboutbook vevent">
+	<h2>
 		About my book<br>
-	</h4>
+	</h2>
 	<p class="booktitle title summary">
 		Semantic Web schnell+kompakt
 	</p>
 	<div class="bookcover">
-		<a class="url" href="http://semanticdreamer.com/semantic-web-schnell-und-kompakt/"><img src="http://entwickler-press.de/ep/ep_buecher/pspic/cover_normal/12/s_k_Semant4948cdb03caf0.jpg" alt="Semantic Web, entwickler.press, schnell + kompakt, Titel erscheint im Juni 2009 "></a>
+		<a class="url" href="http://semanticdreamer.com/semantic-web-schnell-und-kompakt/"><img src="http://entwickler-press.de/ep/ep_buecher/pspic/cover_normal/12/s_k_Semant4948cdb03caf0.jpg" alt="Semantic Web, entwickler.press, schnell + kompakt" width="134" height="214"></a>
 	</div>
 	<div class="bookinfos">
 		<p class="subline">
 			<a href="http://entwickler-press.de/ep/psecom,id,2,buchid,185.html">entwickler.press</a>
 		</p>
-		<p>
-			<!--div class="authors">Matthias Geisler</div-->
-		</p>
-		<ul>
+		<ul class="bookfacts">
 			<li class="pages">144 Seiten, Softcover
 			</li>
 			<li class="isbn">ISBN: 978-3-86802-028-1

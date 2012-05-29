@@ -1,2 +1,17 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+.aboutme { clear: both;}
+.aboutme .authordepiction { float:left;}
+.aboutme .authorinfos { margin-left: 120px;}
+.aboutme .authorinfos .subline {}
+.aboutme .webprofiles li { padding: 1px 0px; list-style-type: none; display: inline; }
+.aboutme .authorname { font-weight: bold; font-style: italic; }
+
+.aboutbook { clear: both;}
+.aboutbook .bookcover { float:left;}
+.aboutbook .bookinfos { margin-left: 10px; float:left;}
+.aboutbook .bookinfos .subline {}
+.aboutbook .bookfacts li { padding: 1px 0px; list-style-type: none; }
+.aboutbook .booktitle { font-weight: bold; font-style: italic; }
+.aboutbook .bookfacts li.isbn, .aboutbook .bookfacts li.bstatus {white-space: nowrap; }

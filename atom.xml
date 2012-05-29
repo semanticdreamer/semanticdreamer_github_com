@@ -4,7 +4,7 @@
   <title><![CDATA[Semantic Dreamer]]></title>
   <link href="http://semanticdreamer.github.com/atom.xml" rel="self"/>
   <link href="http://semanticdreamer.github.com/"/>
-  <updated>2012-05-29T14:31:12+00:00</updated>
+  <updated>2012-05-29T20:59:10+00:00</updated>
   <id>http://semanticdreamer.github.com/</id>
   <author>
     <name><![CDATA[Matthias Geisler]]></name>
@@ -12,5 +12,5 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  Liquid error: incompatible character encodings: UTF-8 and ISO-8859-1
+  Liquid error: incompatible character encodings: ISO-8859-1 and UTF-8
 </feed>

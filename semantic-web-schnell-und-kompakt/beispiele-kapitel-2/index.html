@@ -1,0 +1,804 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Semantic Web schnell+kompakt Beispiele Kapitel 2 - Semantic Dreamer</title>
+  <meta name="author" content="Matthias Geisler">
+
+  
+  <meta name="description" content="Semantic Web Schnell+kompakt Beispiele Kapitel 2 Listing 2.1 HTML-Beispiel mit Einfachem Mikroformat &#8220;formatted name&#8221; (fn) HTML-Beispiel &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-2">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Semantic Dreamer" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Semantic Dreamer</a></h1>
+  
+    <h2>A little Dream goes a long way...</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:semanticdreamer.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives/">Archives</a></li>
+  <li><a href="/semantic-web-schnell-und-kompakt/">Semantic Web Buch</a></li>
+  <li><a href="/about/">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Semantic Web Schnell+kompakt Beispiele Kapitel 2</h1>
+    
+  </header>
+  
+  <h2>Listing 2.1 HTML-Beispiel mit Einfachem Mikroformat &#8220;formatted name&#8221; (fn)</h2>
+
+
+<figure class='code'><figcaption><span>HTML-Beispiel mit Einfachem Mikroformat &#8220;formatted name&#8221; (fn) (kap02_01.xhtml)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel2/kap02_01.xhtml'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot;</span>
+</span><span class='line'><span class="cp"> &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;de&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;title&gt;</span>Semantic Web: schnell+kompakt<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h1&gt;</span>Einfaches Mikroformat (formatted name)<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;p&gt;</span>Hallo, mein Name ist <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fn&quot;</span><span class="nt">&gt;</span>Matthias Geisler<span class="nt">&lt;/span&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 2.2 HTML-Beispiel mit einfachem hCard Mikroformat</h2>
+
+
+<figure class='code'><figcaption><span>HTML-Beispiel mit einfachem hCard Mikroformat (kap02_02.xhtml)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel2/kap02_02.xhtml'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot;</span>
+</span><span class='line'><span class="cp"> &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;de&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;title&gt;</span>Semantic Web: schnell+kompakt<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h1&gt;</span>Einfaches Mikroformat (hCard)<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;vcard&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>          Hallo, mein Name ist
+</span><span class='line'>          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fn&quot;</span><span class="nt">&gt;</span>Matthias Geisler<span class="nt">&lt;/span&gt;</span>.
+</span><span class='line'>      <span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 2.3 HTML-Beispiel mit Organisation hCard Mikroformat</h2>
+
+
+<figure class='code'><figcaption><span>HTML-Beispiel mit Organisation hCard Mikroformat (kap02_03.xhtml)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel2/kap02_03.xhtml'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot;</span>
+</span><span class='line'><span class="cp"> &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;de&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;title&gt;</span>Semantic Web: schnell+kompakt<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>      <span class="c">&lt;!--h1&gt;Zusammengesetztes Mikroformat (h   Card)&lt;/h1--&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;vcard&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;fn organization-unit url&quot;</span> <span class="na">href=</span><span class="s">&quot;http://entwickler-press.de/&quot;</span><span class="nt">&gt;</span>entwickler.press<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;organization-name&quot;</span><span class="nt">&gt;</span>Software <span class="ni">&amp;amp;</span> Support Verlag GmbH<span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;adr&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;street-address&quot;</span><span class="nt">&gt;</span>Geleitsstraße 14<span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;country-name&quot;</span><span class="nt">&gt;</span>DE<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;postal-code&quot;</span><span class="nt">&gt;</span>60599<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;locality&quot;</span><span class="nt">&gt;</span>Frankfurt<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;div&gt;</span>Tel:
+</span><span class='line'>              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;tel&quot;</span><span class="nt">&gt;</span>+49 (0)69 - 63 00 89 0<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tel&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;type&quot;</span><span class="nt">&gt;</span>Fax<span class="nt">&lt;/span&gt;</span>:<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;value&quot;</span><span class="nt">&gt;</span>+49 (0)69 - 63 00 89 89<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;div&gt;</span>E-Mail:
+</span><span class='line'>              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;email&quot;</span><span class="nt">&gt;</span>info@entwickler-press.de<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 2.4 Beispiel des Dublin Core Set in (X)HTML meta und link Elementen</h2>
+
+
+<figure class='code'><figcaption><span>Beispiel des Dublin Core Set in (X)HTML meta und link Elementen (kap02_04.xhtml)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel2/kap02_04.xhtml'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot;</span>
+</span><span class='line'><span class="cp"> &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;de&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;head</span> <span class="na">profile=</span><span class="s">&quot;http://dublincore.org/documents/dcq-html/&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html;charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;title&gt;</span>Semantic Web schnell+kompakt<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>      <span class="c">&lt;!-- Expressing Dublin Core in HTML/XHTML meta and link elements, </span>
+</span><span class='line'><span class="c">           http://dublincore.org/documents/dcq-html/ --&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;schema.DC&quot;</span> <span class="na">href=</span><span class="s">&quot;http://purl.org/dc/elements/1.1/&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;schema.DCTERMS&quot;</span> <span class="na">href=</span><span class="s">&quot;http://purl.org/dc/terms/&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.contributor&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;Dr. Christoph Schmidt&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.coverage&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;Germany&quot;</span>
+</span><span class='line'>          <span class="na">scheme=</span><span class="s">&quot;DCTERMS.TGN&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.creator&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;Matthias Geisler&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;date&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;2009-03-23&quot;</span>
+</span><span class='line'>          <span class="na">scheme=</span><span class="s">&quot;DCTERMS.W3CDTF&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.description&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;Beispiel zur Anwendungen von Dublin Core Metadaten-Elementen.&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.format&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;text/html&quot;</span>
+</span><span class='line'>          <span class="na">scheme=</span><span class="s">&quot;DCTERMS.IMT&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.identifier&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;http://sw-sk.semanticdreamer.com/&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.language&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;de&quot;</span>
+</span><span class='line'>          <span class="na">scheme=</span><span class="s">&quot;DCTERMS.RFC4646&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.publisher&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;entwickler.press&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.relation&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;http://dublincore.org/documents/dces/&quot;</span>
+</span><span class='line'>          <span class="na">scheme=</span><span class="s">&quot;DCTERMS.URI&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.rights&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;http://creativecommons.org/licenses/by-nc-sa/3.0/de/&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.source&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;http://dublincore.org/documents/dcq-html/&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.subject&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;Beispiel zur Anwendungen von Dublin Core Metadaten-Elementen.&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.title&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;Semantic Web schnell+kompakt&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;DC.type&quot;</span>
+</span><span class='line'>          <span class="na">content=</span><span class="s">&quot;Text&quot;</span>
+</span><span class='line'>          <span class="na">scheme=</span><span class="s">&quot;DCTERMS.DCMIType&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;body&gt;&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 2.5 Beispiel Dublin Core in RDF/XML</h2>
+
+
+<figure class='code'><figcaption><span>Beispiel Dublin Core in RDF/XML (kap02_05.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel2/kap02_05.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+</span><span class='line'><span class="c">&lt;!-- Expressing Qualified Dublin Core in RDF / XML, </span>
+</span><span class='line'><span class="c">   http://dublincore.org/documents/dcq-rdf-xml/ --&gt;</span>
+</span><span class='line'><span class="nt">&lt;rdf:RDF</span> <span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span>
+</span><span class='line'>            <span class="na">xmlns:dc=</span><span class="s">&quot;http://purl.org/dc/elements/1.1/&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;rdf:Description&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:contributor&gt;</span>Dr. Christoph Schmidt<span class="nt">&lt;/dc:contributor&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:coverage&gt;</span>Germany<span class="nt">&lt;/dc:coverage&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:creator&gt;</span>Matthias Geisler<span class="nt">&lt;/dc:creator&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:date&gt;</span>2009-03-23<span class="nt">&lt;/dc:date&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:description&gt;</span>Beispiel zur Anwendungen von Dublin Core Metadaten-Elementen.<span class="nt">&lt;/dc:description&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:format&gt;</span>text/html<span class="nt">&lt;/dc:format&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:identifier&gt;</span>http://sw-sk.semanticdreamer.com/<span class="nt">&lt;/dc:identifier&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:language&gt;</span>de<span class="nt">&lt;/dc:language&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:publisher&gt;</span>entwickler.press<span class="nt">&lt;/dc:publisher&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:relation&gt;</span>http://dublincore.org/documents/dces/<span class="nt">&lt;/dc:relation&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:rights&gt;</span>http://creativecommons.org/licenses/by-nc-sa/3.0/de/<span class="nt">&lt;/dc:rights&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:source&gt;</span>http://dublincore.org/documents/dcq-rdf-xml/<span class="nt">&lt;/dc:source&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:subject&gt;</span>Beispiel zur Anwendungen von Dublin Core Metadaten-Elementen.<span class="nt">&lt;/dc:subject&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:title&gt;</span>Semantic Web schnell+kompakt<span class="nt">&lt;/dc:title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;dc:type&gt;</span>Text<span class="nt">&lt;/dc:type&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'><span class="nt">&lt;/rdf:RDF&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 2.6 Beispiel eines FOAF-Dokuments</h2>
+
+
+<figure class='code'><figcaption><span>Beispiel eines FOAF-Dokuments (kap02_06.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel2/kap02_06.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;rdf:RDF</span>
+</span><span class='line'>  <span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span>
+</span><span class='line'>  <span class="na">xmlns:foaf=</span><span class="s">&quot;http://xmlns.com/foaf/0.1/&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nt">&lt;foaf:Person</span> <span class="na">rdf:about=</span><span class="s">&quot;#me&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:name&gt;</span>James Bond<span class="nt">&lt;/foaf:name&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:mbox&gt;</span>mailto:james.bond@example.com<span class="nt">&lt;/foaf:mbox&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:homepage</span> <span class="na">rdf:resource=</span><span class="s">&quot;http:///www.jamesbond.com/&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:img</span> <span class="na">rdf:resource=</span><span class="s">&quot;/images/me.jpg&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/foaf:Person&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;/rdf:RDF&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 2.7 Beispiel eines erweiterten FOAF-Dokuments</h2>
+
+
+<figure class='code'><figcaption><span>Beispiel eines erweiterten FOAF-Dokuments (kap02_07.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel2/kap02_07.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;rdf:RDF</span>
+</span><span class='line'>  <span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span>
+</span><span class='line'>  <span class="na">xmlns:foaf=</span><span class="s">&quot;http://xmlns.com/foaf/0.1/&quot;</span>
+</span><span class='line'>  <span class="na">xmlns:dc=</span><span class="s">&quot;http://purl.org/dc/elements/1.1/&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;foaf:Person</span> <span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span> <span class="na">rdf:ID=</span><span class="s">&quot;me&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:name&gt;</span>James Bond<span class="nt">&lt;/foaf:name&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:givenname&gt;</span>James<span class="nt">&lt;/foaf:givenname&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:family_name&gt;</span>Bond<span class="nt">&lt;/foaf:family_name&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:nick&gt;</span>James<span class="nt">&lt;/foaf:nick&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:mbox</span> <span class="na">rdf:resource=</span><span class="s">&quot;mailto:james@mi5.gov.uk&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:homepage</span> <span class="na">rdf:resource=</span><span class="s">&quot;http://www.jamesbond.com/&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:depiction</span>
+</span><span class='line'>          <span class="na">rdf:resource=</span><span class="s">&quot;http://upload.wikimedia.org/wikipedia/en/c/c5/Fleming007impression.jpg&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:interest&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>              <span class="na">rdf:about=</span><span class="s">&quot;http://de.wikipedia.org/wiki/Martini_(Cocktail)&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;dc:title&gt;</span>Martini - geschüttelt, nicht gerührt<span class="nt">&lt;/dc:title&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/foaf:interest&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:knows&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;foaf:Person&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;foaf:name&gt;</span>M<span class="nt">&lt;/foaf:name&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;foaf:mbox</span>
+</span><span class='line'>                  <span class="na">rdf:resource=</span><span class="s">&quot;mailto:m@mi5.gov.uk&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;rdfs:seeAlso</span>
+</span><span class='line'>                  <span class="na">rdf:resource=</span><span class="s">&quot;http://de.wikipedia.org/wiki/Figuren_aus_James-Bond-Filmen#M&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;/foaf:Person&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/foaf:knows&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;foaf:knows&gt;</span>  
+</span><span class='line'>          <span class="nt">&lt;foaf:Person&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;foaf:name&gt;</span>Q<span class="nt">&lt;/foaf:name&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;foaf:mbox</span>
+</span><span class='line'>                  <span class="na">rdf:resource=</span><span class="s">&quot;mailto:q@mi5.gov.uk&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;rdfs:seeAlso</span>
+</span><span class='line'>                  <span class="na">rdf:resource=</span><span class="s">&quot;http://de.wikipedia.org/wiki/Figuren_aus_James-Bond-Filmen#q&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;/foaf:Person&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/foaf:knows&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/foaf:Person&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;/rdf:RDF&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 2.8 Beispiel für die Verlinkung eines FOAF-Dokuments mittels Auto-Discovery</h2>
+
+
+<figure class='code'><figcaption><span>Beispiel für die Verlinkung eines FOAF-Dokuments mittels Auto-Discovery (kap02_08.xhtml)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel2/kap02_08.xhtml'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot;</span>
+</span><span class='line'><span class="cp"> &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;de&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;meta&quot;</span> <span class="na">type=</span><span class="s">&quot;application/rdf+xml&quot;</span> <span class="na">title=</span><span class="s">&quot;FOAF&quot;</span> <span class="na">href=</span><span class="s">&quot;foaf.rdf&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;title&gt;</span>Semantic Web: schnell+kompakt<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 2.9 Beispiel für Kontaktdaten in RDFa und vCard-RDF</h2>
+
+
+<figure class='code'><figcaption><span>Beispiel für Kontaktdaten in RDFa und vCard-RDF (kap02_09.xhtml)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel2/kap02_09.xhtml'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML+RDFa 1.0//EN&quot;</span>
+</span><span class='line'><span class="cp">    &quot;http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd&quot;&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;de&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;title&gt;</span>Semantic Web: schnell+kompakt<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>      <span class="c">&lt;!--h1&gt;RDFa vCard Profile &lt;/h1--&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;div</span>
+</span><span class='line'>           <span class="na">xmlns:foaf=</span><span class="s">&quot;http://xmlns.com/foaf/0.1/&quot;</span>
+</span><span class='line'>           <span class="na">xmlns:vCard=</span><span class="s">&quot;http://www.w3.org/2001/vcard-rdf/3.0#&quot;</span>
+</span><span class='line'>           <span class="na">about=</span><span class="s">&quot;http://entwickler-press.de/&quot;</span>
+</span><span class='line'>           <span class="na">typeof=</span><span class="s">&quot;foaf:Organization&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;a</span> <span class="na">rel=</span><span class="s">&quot;vCard:URL&quot;</span> <span class="na">href=</span><span class="s">&quot;http://entwickler-press.de/&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">property=</span><span class="s">&quot;vCard:FN&quot;</span><span class="nt">&gt;</span>entwickler.press<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;div</span> <span class="na">property=</span><span class="s">&quot;vCard:Orgname&quot;</span><span class="nt">&gt;</span>Software <span class="ni">&amp;amp;</span> Support Verlag GmbH<span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;div</span> <span class="na">property=</span><span class="s">&quot;vCard:ADR&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;div</span> <span class="na">property=</span><span class="s">&quot;vCard:Street&quot;</span><span class="nt">&gt;</span>Geleitsstraße 14<span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;span</span> <span class="na">property=</span><span class="s">&quot;vCard:Country&quot;</span><span class="nt">&gt;</span>DE<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;span</span> <span class="na">property=</span><span class="s">&quot;vCard:Postal-Code&quot;</span><span class="nt">&gt;</span>60599<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;span</span> <span class="na">property=</span><span class="s">&quot;vCard:Locality&quot;</span><span class="nt">&gt;</span>Frankfurt<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;div&gt;</span>Tel:
+</span><span class='line'>              <span class="nt">&lt;span</span> <span class="na">property=</span><span class="s">&quot;vCard:TEL&quot;</span><span class="nt">&gt;</span>+49 (0)69 - 63 00 89 0<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;div&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;span</span> <span class="na">property=</span><span class="s">&quot;vCard:Type&quot;</span><span class="nt">&gt;</span>Fax<span class="nt">&lt;/span&gt;</span>:<span class="nt">&lt;span</span> <span class="na">property=</span><span class="s">&quot;vCard:Value&quot;</span><span class="nt">&gt;</span>+49 (0)69 - 63 00 89 89<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;div&gt;</span>E-Mail:
+</span><span class='line'>              <span class="nt">&lt;span</span> <span class="na">rel=</span><span class="s">&quot;vCard:EMAIL&quot;</span><span class="nt">&gt;</span>mailto:info@entwickler-press.de<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 2.10 Creative Commons Lizenzinformation in (X)HTML+RDFa</h2>
+
+
+<figure class='code'><figcaption><span>Creative Commons Lizenzinformation in (X)HTML+RDFa (kap02_10.xhtml)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel2/kap02_10.xhtml'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML+RDFa 1.0//EN&quot;</span>
+</span><span class='line'><span class="cp">    &quot;http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd&quot;&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;de&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;title&gt;</span>Creative Commons Namensnennung-Keine kommerzielle Nutzung-Weitergabe unter gleichen Bedingungen 3.0 Deutschland Lizenz<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;p&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;a</span> <span class="na">rel=</span><span class="s">&quot;license&quot;</span> <span class="na">href=</span><span class="s">&quot;http://creativecommons.org/licenses/by-nc-sa/3.0/de/&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">alt=</span><span class="s">&quot;Creative Commons License&quot;</span> <span class="na">style=</span><span class="s">&quot;border-width:0&quot;</span> <span class="na">src=</span><span class="s">&quot;http://i.creativecommons.org/l/by-nc-sa/3.0/de/88x31.png&quot;</span><span class="nt">/&gt;&lt;/a&gt;&lt;br/&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;span</span> <span class="na">xmlns:dc=</span><span class="s">&quot;http://purl.org/dc/elements/1.1/&quot;</span> <span class="na">href=</span><span class="s">&quot;http://purl.org/dc/dcmitype/Text&quot;</span> <span class="na">property=</span><span class="s">&quot;dc:title&quot;</span> <span class="na">rel=</span><span class="s">&quot;dc:type&quot;</span><span class="nt">&gt;</span>Example.com<span class="nt">&lt;/span&gt;</span> von <span class="nt">&lt;a</span> <span class="na">xmlns:cc=</span><span class="s">&quot;http://creativecommons.org/ns#&quot;</span> <span class="na">href=</span><span class="s">&quot;http://example.com/&quot;</span> <span class="na">property=</span><span class="s">&quot;cc:attributionName&quot;</span> <span class="na">rel=</span><span class="s">&quot;cc:attributionURL&quot;</span><span class="nt">&gt;</span>Max Mustermann<span class="nt">&lt;/a&gt;</span> steht unter einer <span class="nt">&lt;a</span> <span class="na">rel=</span><span class="s">&quot;license&quot;</span> <span class="na">href=</span><span class="s">&quot;http://creativecommons.org/licenses/by-nc-sa/3.0/de/&quot;</span><span class="nt">&gt;</span>Creative Commons Namensnennung-Keine kommerzielle Nutzung-Weitergabe unter gleichen Bedingungen 3.0 Deutschland Lizenz<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;br/&gt;</span>
+</span><span class='line'>          Beruht auf einem Inhalt unter <span class="nt">&lt;a</span> <span class="na">xmlns:dc=</span><span class="s">&quot;http://purl.org/dc/elements/1.1/&quot;</span> <span class="na">href=</span><span class="s">&quot;http://example.com/&quot;</span> <span class="na">rel=</span><span class="s">&quot;dc:source&quot;</span><span class="nt">&gt;</span>example.com<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;br/&gt;</span>
+</span><span class='line'>          Über diese Lizenz hinausgehende Erlaubnisse erhalten Sie möglicherweise unter <span class="nt">&lt;a</span> <span class="na">xmlns:cc=</span><span class="s">&quot;http://creativecommons.org/ns#&quot;</span> <span class="na">href=</span><span class="s">&quot;http://example.com/lizenz.html&quot;</span> <span class="na">rel=</span><span class="s">&quot;cc:morePermissions&quot;</span><span class="nt">&gt;</span>http://example.com/lizenz.html<span class="nt">&lt;/a&gt;</span>.
+</span><span class='line'>      <span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 2.11 Dokumenttyp Deklaration XHTML+RDFa</h2>
+
+
+<figure class='code'><figcaption><span>Dokumenttyp Deklaration XHTML+RDFa (kap02_11.xhtml)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel2/kap02_11.xhtml'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML+RDFa 1.0//EN&quot;</span>
+</span><span class='line'><span class="cp">    &quot;http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd&quot;&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;de&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  [HTML Elemente]
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-2/index.html" data-via="matthiasgeisler" data-counturl="http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-2/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/12/16/yeah-finally-the-internet-explorer-6-countdownmoving-the-world-off-internet-explorer-6/">Yeah! Finally... The Internet Explorer 6 Countdown
+Moving the world off Internet Explorer 6</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/04/wise-words-abouy-life-by-steve-jobs/">Wise Words abouy Life by Steve Jobs</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/22/was-bedeutet-ubuntu-eigentlich/">Was bedeutet Ubuntu eigentlich?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/13/wordle-net-word-cloud-from-del-icio-us-tags/">Wordle.net - word cloud from del.icio.us tags</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/11/little-big-berlin-awesome-tilt-shift-video/">"Little Big Berlin" - Awesome Tilt-shift Video</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("matthiasgeisler", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/matthiasgeisler" class="twitter-follow-button" data-show-count="false">Follow @matthiasgeisler</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/semanticdreamer?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/semanticdreamer">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Matthias Geisler -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'semanticdreamer';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-2/index.html';
+        var disqus_url = 'http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-2/index.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

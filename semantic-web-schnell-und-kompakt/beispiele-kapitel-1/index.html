@@ -1,0 +1,963 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Semantic Web schnell+kompakt Beispiele Kapitel 1 - Semantic Dreamer</title>
+  <meta name="author" content="Matthias Geisler">
+
+  
+  <meta name="description" content="Semantic Web Schnell+kompakt Beispiele Kapitel 1 Listing 1.1 Beispiel eines XML-Dokumentes Beispiel eines XML-Dokumentes (kap01_01.xml) download 1
+2 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-1">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Semantic Dreamer" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Semantic Dreamer</a></h1>
+  
+    <h2>A little Dream goes a long way...</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:semanticdreamer.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives/">Archives</a></li>
+  <li><a href="/semantic-web-schnell-und-kompakt/">Semantic Web Buch</a></li>
+  <li><a href="/about/">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Semantic Web Schnell+kompakt Beispiele Kapitel 1</h1>
+    
+  </header>
+  
+  <h2>Listing 1.1 Beispiel eines XML-Dokumentes</h2>
+
+
+
+
+<figure class='code'><figcaption><span>Beispiel eines XML-Dokumentes (kap01_01.xml)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/kap01_01.xml'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="nt">&lt;Buch</span> <span class="na">isbn=</span><span class="s">&quot;978-3-86802-028-1&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;Titel&gt;</span>Semantic Web: schnell+kompakt<span class="nt">&lt;/Titel&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;Autor&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;Vorname&gt;</span>Matthias<span class="nt">&lt;/Vorname&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;Nachname&gt;</span>Geisler<span class="nt">&lt;/Nachname&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/Autor&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;Verlag&gt;</span>entwickler.press<span class="nt">&lt;/Verlag&gt;</span>
+</span><span class='line'><span class="nt">&lt;/Buch&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 1.2 Beispiel einer DTD</h2>
+
+
+<figure class='code'><figcaption><span>Beispiel einer DTD (kap01_02.dtd)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/kap01_02.dtd'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='dtd'><span class='line'><span class="c">&lt;!-- Ein Buch hat einen Titel, mindestens </span>
+</span><span class='line'><span class="c">einen Autor und keinen oder einen Verlag. --&gt;</span>
+</span><span class='line'><span class="k">&lt;!ELEMENT</span> <span class="nt">Buch</span> <span class="o">(</span><span class="nt">Titel</span><span class="o">,</span> <span class="nt">Autor</span><span class="o">+,</span> <span class="nt">Verlag</span><span class="o">?)</span><span class="k">&gt;</span>
+</span><span class='line'><span class="k">&lt;!ELEMENT</span> <span class="nt">Titel</span> <span class="o">(</span><span class="kc">#PCDATA</span><span class="o">)</span><span class="k">&gt;</span>
+</span><span class='line'><span class="c">&lt;!-- Autor mit Vor- und Nachnamen. --&gt;</span>
+</span><span class='line'><span class="k">&lt;!ELEMENT</span> <span class="nt">Autor</span> <span class="o">(</span><span class="nt">Vorname</span><span class="o">,</span> <span class="nt">Nachname</span><span class="o">)</span><span class="k">&gt;</span>
+</span><span class='line'><span class="k">&lt;!ELEMENT</span> <span class="nt">Vorname</span> <span class="o">(</span><span class="kc">#PCDATA</span><span class="o">)</span><span class="k">&gt;</span>
+</span><span class='line'><span class="k">&lt;!ELEMENT</span> <span class="nt">Nachname</span> <span class="o">(</span><span class="kc">#PCDATA</span><span class="o">)</span><span class="k">&gt;</span>
+</span><span class='line'><span class="k">&lt;!ELEMENT</span> <span class="nt">Verlag</span> <span class="o">(</span><span class="kc">#PCDATA</span><span class="o">)</span><span class="k">&gt;</span>
+</span><span class='line'><span class="c">&lt;!-- Ein Buch muss eine ISBN haben. --&gt;</span>
+</span><span class='line'><span class="k">&lt;!ATTLIST</span> <span class="nt">Buch</span> <span class="na">isbn</span> <span class="kc">CDATA</span> <span class="kc">#REQUIRED</span><span class="k">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 1.3 Beispiel eines XML Schema (XSD)</h2>
+
+
+<figure class='code'><figcaption><span>Beispiel eines XML Schema (XSD) (kap01_03.xsd)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/kap01_03.xsd'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="nt">&lt;xsd:schema</span>
+</span><span class='line'>  <span class="na">xmlns:xsd=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;xsd:element</span> <span class="na">name=</span><span class="s">&quot;Buch&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;xsd:complexType&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;xsd:sequence&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;xsd:element</span> <span class="na">name=</span><span class="s">&quot;Titel&quot;</span>
+</span><span class='line'>          <span class="na">type=</span><span class="s">&quot;xsd:string&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;xsd:element</span> <span class="na">ref=</span><span class="s">&quot;Autor&quot;</span>
+</span><span class='line'>          <span class="na">maxOccurs=</span><span class="s">&quot;unbounded&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;xsd:element</span> <span class="na">name=</span><span class="s">&quot;Verlag&quot;</span>
+</span><span class='line'>          <span class="na">type=</span><span class="s">&quot;xsd:string&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/xsd:sequence&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;xsd:attribute</span> <span class="na">name=</span><span class="s">&quot;isbn&quot;</span>
+</span><span class='line'>      <span class="na">type=</span><span class="s">&quot;xsd:string&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/xsd:complexType&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/xsd:element&gt;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nt">&lt;xsd:element</span> <span class="na">name=</span><span class="s">&quot;Autor&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;xsd:complexType&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;xsd:sequence&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;xsd:element</span> <span class="na">name=</span><span class="s">&quot;Vorname&quot;</span>
+</span><span class='line'>          <span class="na">type=</span><span class="s">&quot;xsd:string&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;xsd:element</span> <span class="na">name=</span><span class="s">&quot;Nachname&quot;</span>
+</span><span class='line'>          <span class="na">type=</span><span class="s">&quot;xsd:string&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/xsd:sequence&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/xsd:complexType&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/xsd:element&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;/xsd:schema&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 1.4 Beispiel einer XML Wiedergabeliste</h2>
+
+
+<figure class='code'><figcaption><span>Beispiel einer XML Wiedergabeliste (kap01_04.xml)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/kap01_04.xml'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="c">&lt;!-- Top 3 der Single Charts Deutschland vom 06.03.2009</span>
+</span><span class='line'><span class="c">   Quelle: http://www.br-online.de/bayern3/ --&gt;</span>
+</span><span class='line'><span class="nt">&lt;Wiedergabeliste&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;Lied</span> <span class="na">platz=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;Titel&gt;</span>IRGENDWAS BLEIBT<span class="nt">&lt;/Titel&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;Interpret&gt;</span>SILBERMOND<span class="nt">&lt;/Interpret&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/Lied&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;Lied</span> <span class="na">platz=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;Titel&gt;</span>POKER FACE<span class="nt">&lt;/Titel&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;Interpret&gt;</span>LADY GAGA<span class="nt">&lt;/Interpret&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/Lied&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;Lied</span> <span class="na">platz=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;Titel&gt;</span>WIRE TO WIRE<span class="nt">&lt;/Titel&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;Interpret&gt;</span>RAZORLIGHT<span class="nt">&lt;/Interpret&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/Lied&gt;</span>
+</span><span class='line'><span class="nt">&lt;/Wiedergabeliste&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 1.5 Beispiel für Namensraumdeklaration in einem XHTML-Dokument</h2>
+
+
+<figure class='code'><figcaption><span>Beispiel für Namensraumdeklaration in einem XHTML-Dokument (kap01_05.xhtml)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/kap01_05.xhtml'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;</span>
+</span><span class='line'><span class="cp"> &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;de&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  [XHtml Elemente...]
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 1.6 Beispiel für zwei Namensräume in einem XHtml-Dokument</h2>
+
+
+<figure class='code'><figcaption><span>Beispiel für zwei Namensräume in einem XHtml-Dokument (kap01_06.xhtml)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/kap01_06.xhtml'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;</span>
+</span><span class='line'><span class="cp"> &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span>
+</span><span class='line'>  <span class="na">xmlns:mg=</span><span class="s">&quot;http://matthiasgeisler.net/xmlns/mg&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  [XHtml Elemente...]
+</span><span class='line'>  <span class="nt">&lt;mg:Buch</span> <span class="na">mg:isbn=</span><span class="s">&quot;978-3-86802-028-1&quot;</span><span class="nt">&gt;</span>Semantic Web<span class="nt">&lt;/mg:Buch&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 1.7 RDF Triple in Turtle Syntax</h2>
+
+
+<figure class='code'><figcaption><span>RDF Triple in Turtle Syntax (kap01_07.turtle)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/kap01_07.turtle'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>#Der neue James Bond Kinofilm mit Daniel Craig heißt &quot;Ein Quantum Trost&quot; (Quantum of Solace).
+</span><span class='line'>
+</span><span class='line'>&lt;http://jamesbond.com/EinQuantumTrost&gt;
+</span><span class='line'>   &lt;http://example.com/ErscheintIt&gt;
+</span><span class='line'>      &lt;http://jamesbond.com/Filmreihe&gt; .
+</span><span class='line'>
+</span><span class='line'>&lt;http://jamesbond.com/EinQuantumTrost&gt;
+</span><span class='line'>   &lt;http://example.com/Titel&gt;
+</span><span class='line'>      &quot;Ein Quantum Trost&quot;@de .
+</span><span class='line'>
+</span><span class='line'>&lt;http://jamesbond.com/EinQuantumTrost&gt;
+</span><span class='line'>   &lt;http://example.com/Titel&gt;
+</span><span class='line'>      &quot;Quantum of Solace&quot;@en .
+</span><span class='line'>
+</span><span class='line'>&lt;http://example.com/DanielCraig&gt;
+</span><span class='line'>   &lt;http://example.com/SpieltIn&gt;
+</span><span class='line'>      &lt;http://jamesbond.com/EinQuantumTrost&gt; .
+</span><span class='line'>
+</span><span class='line'>&lt;http://example.com/DanielCraig&gt;
+</span><span class='line'>   &lt;http://example.com/Name&gt;
+</span><span class='line'>      &quot;Daniel Craig&quot; .
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 1.8 RDF Triple in Turtle Syntax, mit Prefix und Abkürzung</h2>
+
+
+<figure class='code'><figcaption><span>RDF Triple in Turtle Syntax, mit Prefix und Abkürzung (kap01_08.turtle)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/kap01_08.turtle'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>#Der neue James Bond Kinofilm mit Daniel Craig heißt &quot;Ein Quantum Trost&quot; (Quantum of Solace).
+</span><span class='line'>
+</span><span class='line'>@prefix ex: &lt;http://example.com/&gt; .
+</span><span class='line'>@prefix bond: &lt;http://jamesbond.com/&gt; .
+</span><span class='line'>
+</span><span class='line'>bond:EinQuantumTrost  ex:ErscheintIt  bond:Filmreihe .
+</span><span class='line'>bond:EinQuantumTrost  ex:Titel        &quot;Ein Quantum Trost&quot;@de .
+</span><span class='line'>bond:EinQuantumTrost  ex:Titel        &quot;Quantum of Solace&quot;@en .
+</span><span class='line'>ex:DanielCraig       ex:SpieltIn     bond:EinQuantumTrost .
+</span><span class='line'>ex:DanielCraig       ex:Name         &quot;Daniel Craig&quot; .
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 1.9 RDF-Graph in XML Beschreibung</h2>
+
+
+<figure class='code'><figcaption><span>RDF-Graph in XML Beschreibung (kap01_09.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/kap01_09.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="nt">&lt;rdf:RDF</span>
+</span><span class='line'>  <span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span>
+</span><span class='line'>    <span class="na">xmlns:ex=</span><span class="s">&quot;http://example.com/&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">&lt;!-- Der neue James Bond Kinofilm mit Daniel Craig heißt </span>
+</span><span class='line'><span class="c">       &quot;Ein Quantum Trost&quot; (Quantum of Solace). --&gt;</span>
+</span><span class='line'>      
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>      <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/EinQuantumTrost&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ex:ErscheintIt&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>              <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/Filmreihe&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/ex:ErscheintIt&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>      <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/EinQuantumTrost&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ex:Titel</span> <span class="na">xml:lang=</span><span class="s">&quot;de&quot;</span><span class="nt">&gt;</span>Ein Quantum Trost<span class="nt">&lt;/ex:Titel&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>      <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/EinQuantumTrost&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ex:Titel</span> <span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>Quantum of Solence<span class="nt">&lt;/ex:Titel&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>      <span class="na">rdf:about=</span><span class="s">&quot;http://example.com/DanielCraig&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ex:SpieltIn&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>              <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/EinQuantumTrost&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/ex:SpieltIn&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>      <span class="na">rdf:about=</span><span class="s">&quot;http://example.com/DanielCraig&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ex:Name&gt;</span>Daniel Craig<span class="nt">&lt;/ex:Name&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>  
+</span><span class='line'><span class="nt">&lt;/rdf:RDF&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 1.10 RDF-Graph in kompakter XML Beschreibung</h2>
+
+
+<figure class='code'><figcaption><span>RDF-Graph in kompakter XML Beschreibung (kap01_10.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/kap01_10.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="nt">&lt;rdf:RDF</span>
+</span><span class='line'>  <span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span>
+</span><span class='line'>    <span class="na">xmlns:ex=</span><span class="s">&quot;http://example.com/&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c">&lt;!-- Der neue James Bond Kinofilm mit Daniel Craig heißt </span>
+</span><span class='line'><span class="c">       &quot;Ein Quantum Trost&quot; (Quantum of Solace). --&gt;</span>
+</span><span class='line'>      
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>      <span class="na">rdf:about=</span><span class="s">&quot;http://example.com/DanielCraig&quot;</span>
+</span><span class='line'>      <span class="na">ex:Name=</span><span class="s">&quot;Daniel Craig&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ex:SpieltIn&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>              <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/EinQuantumTrost&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;ex:ErscheintIt</span>
+</span><span class='line'>                  <span class="na">rdf:resource=</span><span class="s">&quot;http://jamesbond.com/Filmreihe&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;ex:Titel&gt;</span>Ein Quantum Trost<span class="nt">&lt;/ex:Titel&gt;</span>
+</span><span class='line'>              <span class="nt">&lt;ex:Titel&gt;</span>Quantum of Solace<span class="nt">&lt;/ex:Titel&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/ex:SpieltIn&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>      
+</span><span class='line'><span class="nt">&lt;/rdf:RDF&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>RDF Sprachangaben</h2>
+
+
+<h3>RDF/XML</h3>
+
+
+<figure class='code'><figcaption><span>RDF/XML (RDF-lang.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/RDF-lang.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="nt">&lt;rdf:RDF</span>
+</span><span class='line'>  <span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span>
+</span><span class='line'>    <span class="na">xmlns:ex=</span><span class="s">&quot;http://example.com/&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>      <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/EinQuantumTrost&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ex:Titel</span> <span class="na">xml:lang=</span><span class="s">&quot;de&quot;</span><span class="nt">&gt;</span>Ein Quantum Trost<span class="nt">&lt;/ex:Titel&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>      <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/EinQuantumTrost&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ex:Titel</span> <span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>Quantum of Solence<span class="nt">&lt;/ex:Titel&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>  
+</span><span class='line'><span class="nt">&lt;/rdf:RDF&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Turtle</h3>
+
+
+<figure class='code'><figcaption><span>Turtle (RDF-lang.turtle)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/RDF-lang.turtle'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>@prefix ex: &lt;http://example.com/&gt; .
+</span><span class='line'>@prefix bond: &lt;http://jamesbond.com/&gt; .
+</span><span class='line'>
+</span><span class='line'>bond:EinQuantumTrost  ex:Titel  &quot;Ein Quantum Trost&quot;@de .
+</span><span class='line'>bond:EinQuantumTrost  ex:Titel  &quot;Quantum of Solace&quot;@en .
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>RDF Datentypen</h2>
+
+
+<h3>RDF/XML</h3>
+
+
+<figure class='code'><figcaption><span>RDF/XML (RDF-datatype.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/RDF-datatype.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="nt">&lt;rdf:RDF</span>
+</span><span class='line'>  <span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span>
+</span><span class='line'>    <span class="na">xmlns:ex=</span><span class="s">&quot;http://example.com/&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>      <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/EinQuantumTrost&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ex:Titel</span> <span class="na">rdf:datatype=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema#string&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>          Ein Quantum Trost
+</span><span class='line'>      <span class="nt">&lt;/ex:Titel&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>  
+</span><span class='line'><span class="nt">&lt;/rdf:RDF&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Turtle</h3>
+
+
+<figure class='code'><figcaption><span>Turtle (RDF-datatype.turtle)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/RDF-datatype.turtle'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema&gt; .
+</span><span class='line'>@prefix ex: &lt;http://example.com/&gt; .
+</span><span class='line'>@prefix bond: &lt;http://jamesbond.com/&gt; .
+</span><span class='line'>
+</span><span class='line'>bond:EinQuantumTrost  ex:Titel  &quot;Ein Quantum Trost&quot;^^xsd:string .
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>RDF Offene Listen (engl. Container)</h2>
+
+
+<h3>RDF/XML</h3>
+
+
+<figure class='code'><figcaption><span>RDF/XML (RDF-container.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/RDF-container.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="nt">&lt;rdf:RDF</span>
+</span><span class='line'>  <span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span>
+</span><span class='line'>    <span class="na">xmlns:ex=</span><span class="s">&quot;http://example.com/&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span> <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/JamesBond&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;ex:Kollegen&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;rdf:Seq&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;rdf:li</span> <span class="na">rdf:resource=</span><span class="s">&quot;http://jamesbond.com/M&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;rdf:li</span> <span class="na">rdf:resource=</span><span class="s">&quot;http://jamesbond.com/Q&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/rdf:Seq&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/ex:Kollegen&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>  
+</span><span class='line'><span class="nt">&lt;/rdf:RDF&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Turtle</h3>
+
+
+<figure class='code'><figcaption><span>Turtle (RDF-container.turtle)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/RDF-container.turtle'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+</span><span class='line'>@prefix ex: &lt;http://example.com/&gt; .
+</span><span class='line'>@prefix bond: &lt;http://jamesbond.com/&gt; .
+</span><span class='line'>
+</span><span class='line'>bond:JamesBond
+</span><span class='line'>  ex:Kollege [
+</span><span class='line'>    a rdf:Seq;
+</span><span class='line'>    rdf:_1 bond:M;
+</span><span class='line'>    rdf:_2 bond:Q;
+</span><span class='line'>  ].
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>RDF Geschlossene Listen (engl. Collection)</h2>
+
+
+<h3>RDF/XML</h3>
+
+
+<figure class='code'><figcaption><span>RDF/XML (RDF-collection.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/RDF-collection.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="nt">&lt;rdf:RDF</span>
+</span><span class='line'>  <span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span>
+</span><span class='line'>    <span class="na">xmlns:ex=</span><span class="s">&quot;http://example.com/&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span> <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/JamesBond&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;ex:Kollegen</span> <span class="na">rdf:parseType=</span><span class="s">&quot;Collection&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;rdf:description</span> <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/M&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;rdf:description</span> <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/Q&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/ex:Kollegen&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>  
+</span><span class='line'><span class="nt">&lt;/rdf:RDF&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Turtle</h3>
+
+
+<figure class='code'><figcaption><span>Turtle (RDF-collection.turtle)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/RDF-collection.turtle'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>@prefix ex: &lt;http://example.com/&gt; .
+</span><span class='line'>@prefix bond: &lt;http://jamesbond.com/&gt; .
+</span><span class='line'>
+</span><span class='line'>bond:JamesBond
+</span><span class='line'>  ex:Kollege
+</span><span class='line'>    ( bond:M bond:Q ) .
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>RDF Leere Knoten (engl. Blank Nodes oder BNode)</h2>
+
+
+<h3>RDF/XML</h3>
+
+
+<figure class='code'><figcaption><span>RDF/XML (RDF-bnode.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/RDF-bnode.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="nt">&lt;rdf:RDF</span>
+</span><span class='line'>  <span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span>
+</span><span class='line'>    <span class="na">xmlns:ex=</span><span class="s">&quot;http://example.com/&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>      <span class="na">rdf:about=</span><span class="s">&quot;http://example.com/DanielCraig&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ex:SpieltIn</span> <span class="na">rdf:nodeID=</span><span class="s">&quot;id1&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span> <span class="na">rdf:nodeID=</span><span class="s">&quot;id1&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ex:Film</span>
+</span><span class='line'>          <span class="na">rdf:resource=</span><span class="s">&quot;http://jamesbond.com/EinQuantumTrost&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ex:Erscheinungsjahr&gt;</span>2008<span class="nt">&lt;/ex:Erscheinungsjahr&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>  
+</span><span class='line'><span class="nt">&lt;/rdf:RDF&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Turtle</h3>
+
+
+<figure class='code'><figcaption><span>Turtle (RDF-bnode.turtle)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel1/RDF-bnode.turtle'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+</span><span class='line'>@prefix ex: &lt;http://example.com/&gt; .
+</span><span class='line'>@prefix bond: &lt;http://jamesbond.com/&gt; .
+</span><span class='line'>
+</span><span class='line'>bond:JamesBond
+</span><span class='line'>  ex:SpieltIn
+</span><span class='line'>    _:id1 .
+</span><span class='line'>_:id1
+</span><span class='line'>  ex:Film &lt;http://jamesbond.com/EinQuantumTrost&gt;;
+</span><span class='line'>  ex:Erscheinungsjahr &quot;2008&quot; .
+</span></code></pre></td></tr></table></div></figure>
+
+
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-1/index.html" data-via="matthiasgeisler" data-counturl="http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-1/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/12/16/yeah-finally-the-internet-explorer-6-countdownmoving-the-world-off-internet-explorer-6/">Yeah! Finally... The Internet Explorer 6 Countdown
+Moving the world off Internet Explorer 6</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/04/wise-words-abouy-life-by-steve-jobs/">Wise Words abouy Life by Steve Jobs</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/22/was-bedeutet-ubuntu-eigentlich/">Was bedeutet Ubuntu eigentlich?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/13/wordle-net-word-cloud-from-del-icio-us-tags/">Wordle.net - word cloud from del.icio.us tags</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/11/little-big-berlin-awesome-tilt-shift-video/">"Little Big Berlin" - Awesome Tilt-shift Video</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("matthiasgeisler", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/matthiasgeisler" class="twitter-follow-button" data-show-count="false">Follow @matthiasgeisler</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/semanticdreamer?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/semanticdreamer">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Matthias Geisler -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'semanticdreamer';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-1/index.html';
+        var disqus_url = 'http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-1/index.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

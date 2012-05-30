@@ -538,14 +538,56 @@
     </url>
     <url>
         <loc>http://semanticdreamer.github.com/about/</loc>
-        <lastmod>2012-05-29T14:27:24+00:00</lastmod>
+        <lastmod>2012-05-30T14:39:50+00:00</lastmod>
     </url>
     <url>
         <loc>http://semanticdreamer.github.com/blog/archives/</loc>
         <lastmod>2012-05-29T20:58:41+00:00</lastmod>
     </url>
     <url>
+        <loc>http://semanticdreamer.github.com/hacking-ikea-norden-changing-table/</loc>
+        <lastmod>2012-05-30T14:38:52+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://semanticdreamer.github.com/</loc>
         <lastmod>2012-05-29T20:58:41+00:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-1/
+        </loc>
+        <lastmod>2012-05-30T14:39:01+00:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-2/
+        </loc>
+        <lastmod>2012-05-30T14:39:05+00:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-3/
+        </loc>
+        <lastmod>2012-05-30T14:39:10+00:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-4/
+        </loc>
+        <lastmod>2012-05-30T14:39:14+00:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-vorwort/
+        </loc>
+        <lastmod>2012-05-30T14:39:17+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/erratum/</loc>
+        <lastmod>2012-05-30T14:39:22+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/</loc>
+        <lastmod>2012-05-30T14:39:26+00:00</lastmod>
     </url>
 </urlset>

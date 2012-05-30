@@ -1,0 +1,527 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Semantic Web schnell+kompakt Beispiele Kapitel 3 - Semantic Dreamer</title>
+  <meta name="author" content="Matthias Geisler">
+
+  
+  <meta name="description" content="Semantic Web Schnell+kompakt Beispiele Kapitel 3 RDFS Eigenschaften rdfs:subClassOf rdfs:subClassOf (RDFS-subClassOf.turtle) download 1
+2
+3
+4
+5
+6
+7 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-3">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Semantic Dreamer" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Semantic Dreamer</a></h1>
+  
+    <h2>A little Dream goes a long way...</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:semanticdreamer.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives/">Archives</a></li>
+  <li><a href="/semantic-web-schnell-und-kompakt/">Semantic Web Buch</a></li>
+  <li><a href="/about/">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Semantic Web Schnell+kompakt Beispiele Kapitel 3</h1>
+    
+  </header>
+  
+  <h2>RDFS Eigenschaften</h2>
+
+
+<h3>rdfs:subClassOf</h3>
+
+
+<figure class='code'><figcaption><span>rdfs:subClassOf (RDFS-subClassOf.turtle)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel3/RDFS-subClassOf.turtle'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>@prefix ex: &lt;http://example.com/&gt; .
+</span><span class='line'>@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+</span><span class='line'>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+</span><span class='line'>
+</span><span class='line'>ex:Auto
+</span><span class='line'>  rdfs:subClassOf
+</span><span class='line'>    ex:Fahrzeug.
+</span><span class='line'>ex:AudiA2 rdf:type ex:Auto .
+</span><span class='line'>ex:AudiA2 rdf:type ex:Fahrzeug .
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>rdfs:subPropertyOf</h3>
+
+
+<figure class='code'><figcaption><span>rdfs:subPropertyOf (RDFS-subPropertyOf.turtle)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel3/RDFS-subPropertyOf.turtle'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>@prefix ex: &lt;http://example.com/&gt; .
+</span><span class='line'>@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+</span><span class='line'>
+</span><span class='line'>ex:Bruder
+</span><span class='line'>  rdfs:subPropertyOf
+</span><span class='line'>    ex:Geschwister .
+</span><span class='line'>ex:Bob ex:Bruder ex:Alice .
+</span><span class='line'>ex:Bob ex:Geschwister ex:Alice .
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>rdfs:range und rdfs:domain</h3>
+
+
+<figure class='code'><figcaption><span>rdfs:range und rdfs:domain (RDFS-range+domain.turtle)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel3/RDFS-range+domain.turtle'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>@prefix ex: &lt;http://example.com/&gt; .
+</span><span class='line'>@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+</span><span class='line'>
+</span><span class='line'>ex:Marke rdfs:domain ex:Auto .
+</span><span class='line'>ex:Marke rdfs:range ex:Automarke .
+</span><span class='line'>ex:AudiA2 ex:Marke ex:Audi .
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>rdfs:label und rdfs:comment</h3>
+
+
+<p>Quelle: gekürzt aus <a href="http://xmlns.com/foaf/spec/index.rdf">FOAF Vokabular Spezifikation 0.91</a></p>
+
+
+<figure class='code'><figcaption><span>rdfs:label und rdfs:comment (RDFS-label+comment.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel3/RDFS-label+comment.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="c">&lt;!-- Quelle: gekürzt aus FOAF Vokabular Spezifikation 0.91, </span>
+</span><span class='line'><span class="c">   http://xmlns.com/foaf/spec/index.rdf --&gt;</span>
+</span><span class='line'><span class="nt">&lt;rdfs:Class</span>
+</span><span class='line'>  <span class="na">rdf:about=</span><span class="s">&quot;http://xmlns.com/foaf/0.1/Person&quot;</span>
+</span><span class='line'>  <span class="na">rdfs:label=</span><span class="s">&quot;Person&quot;</span>
+</span><span class='line'>  <span class="na">rdfs:comment=</span><span class="s">&quot;A person.&quot;</span>
+</span><span class='line'>  <span class="nt">/&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>rdfs:type</h3>
+
+
+<figure class='code'><figcaption><span>rdfs:type (RDFS-type.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel3/RDFS-type.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="nt">&lt;rdfs:Class</span>
+</span><span class='line'>  <span class="na">rdf:about=</span><span class="s">&quot;http://example.com/AutoA2&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;rdf:type</span>
+</span><span class='line'>      <span class="na">rdf:resource=</span><span class="s">&quot;http://example.com/Auto&quot;</span>
+</span><span class='line'>  <span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;/rdf:Class&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>RDFS Hilfseigenschaften</h2>
+
+
+<h3>rdfs:seeAlso</h3>
+
+
+<figure class='code'><figcaption><span>rdfs:seeAlso (RDFS-seeAlso.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel3/RDFS-seeAlso.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="nt">&lt;rdf:RDF</span>
+</span><span class='line'>  <span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span>
+</span><span class='line'>  <span class="na">xmlns:rdfs=</span><span class="s">&quot;http://www.w3.org/2000/01/rdf-schema#&quot;</span>
+</span><span class='line'>    <span class="na">xmlns:ex=</span><span class="s">&quot;http://example.com/&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;rdf:Description</span>
+</span><span class='line'>      <span class="na">rdf:about=</span><span class="s">&quot;http://jamesbond.com/EinQuantumTrost&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ex:Titel</span> <span class="na">xml:lang=</span><span class="s">&quot;de&quot;</span><span class="nt">&gt;</span>Ein Quantum Trost<span class="nt">&lt;/ex:Titel&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;rdfs:seeAlso</span> <span class="na">rdf:resource=</span><span class="s">&quot;http://www.ein-quantum-trost.de/&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/rdf:Description&gt;</span>
+</span><span class='line'>  
+</span><span class='line'><span class="nt">&lt;/rdf:RDF&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>rdfs:isDefinedBy</h3>
+
+
+<p>Quelle: gekürzt aus <a href="http://xmlns.com/foaf/spec/index.rdf">FOAF Vokabular Spezifikation 0.91</a></p>
+
+
+<figure class='code'><figcaption><span>rdfs:isDefinedBy (RDFS-isDefinedBy.rdf)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel3/RDFS-isDefinedBy.rdf'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="c">&lt;!-- Quelle: gekürzt aus FOAF Vokabular Spezifikation 0.91, </span>
+</span><span class='line'><span class="c">   http://xmlns.com/foaf/spec/index.rdf --&gt;</span>
+</span><span class='line'><span class="nt">&lt;rdfs:Class</span>
+</span><span class='line'>  <span class="na">rdf:about=</span><span class="s">&quot;http://xmlns.com/foaf/0.1/Person&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;rdfs:isDefinedBy</span>
+</span><span class='line'>      <span class="na">rdf:resource=</span><span class="s">&quot;http://xmlns.com/foaf/0.1/&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;/rdfs:Class&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 3.1 Beispiel des Kopf eines OWL-Dokumentes (gekürzt)</h2>
+
+
+<figure class='code'><figcaption><span>Beispiel des Kopf eines OWL-Dokumentes (gekürzt) (kap03_01.owl)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel3/kap03_01.owl'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class='line'><span class="c">&lt;!-- Quelle: gekürzt von http://www.w3.org/TR/owl-guide/wine.rdf --&gt;</span>
+</span><span class='line'><span class="nt">&lt;rdf:RDF</span>
+</span><span class='line'>  <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#&quot;</span>
+</span><span class='line'>  <span class="na">xml:base=</span><span class="s">&quot;http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#&quot;</span>
+</span><span class='line'>  <span class="na">xmlns:owl=</span><span class="s">&quot;http://www.w3.org/2002/07/owl#&quot;</span>
+</span><span class='line'>  <span class="na">xmlns:rdf=</span><span class="s">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span>
+</span><span class='line'>  <span class="na">xmlns:rdfs=</span><span class="s">&quot;http://www.w3.org/2000/01/rdf-schema#&quot;</span>
+</span><span class='line'>  <span class="na">xmlns:ex=</span><span class="s">&quot;http://example.com/&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;owl:Ontology</span> <span class="na">rdf:about=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;rdfs:comment&gt;</span>Eine Beispiel OWL-Ontologie<span class="nt">&lt;/rdfs:comment&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;owl:versionInfo&gt;</span>v0.1<span class="nt">&lt;/owl:versionInfo&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;owl:priorVersion&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;owl:Ontology</span> <span class="na">rdf:about=</span><span class="s">&quot;http://example.com/example1&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/owl:priorVersion&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;owl:imports</span> <span class="na">rdf:resource=</span><span class="s">&quot;http://example.com/example2&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;rdfs:comment&gt;</span>Ein beliebiger Kommentar...<span class="nt">&lt;/rdfs:comment&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;rdfs:label&gt;</span>Beispiel Ontologie<span class="nt">&lt;/rdfs:label&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/owl:Ontology&gt;</span>
+</span><span class='line'><span class="nt">&lt;/rdf:RDF&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 3.2 Einfaches SPARQL Beispiel</h2>
+
+
+<figure class='code'><figcaption><span>Einfaches SPARQL Beispiel (kap03_02.sparql)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel3/kap03_02.sparql'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>#Alle Filme in denen Daniel Craig mitspielt.
+</span><span class='line'>#SPARQL Endpoint URL: http://dbpedia.org/sparql/
+</span><span class='line'>
+</span><span class='line'>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+</span><span class='line'>PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+</span><span class='line'>
+</span><span class='line'>SELECT ?film
+</span><span class='line'>WHERE {
+</span><span class='line'>  ?film rdf:type &lt;http://dbpedia.org/ontology/Film&gt;;
+</span><span class='line'>  dbpedia2:starring &lt;http://dbpedia.org/resource/Daniel_Craig&gt;.
+</span><span class='line'>}
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<h2>Listing 3.3 Erweitertes SPARQL Beispiel</h2>
+
+
+<figure class='code'><figcaption><span>Erweitertes SPARQL Beispiel (kap03_03.sparql)</span> <a href='/downloads/code/sw-sk-beispiele/Kapitel3/kap03_03.sparql'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>#Alle Filme in denen Daniel Craig mitspielt,
+</span><span class='line'>#der deutsche Titel und Zusammenfassung,
+</span><span class='line'>#Direktor und Produzent.
+</span><span class='line'>#SPARQL Endpoint URL: http://dbpedia.org/sparql/
+</span><span class='line'>
+</span><span class='line'>PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+</span><span class='line'>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+</span><span class='line'>PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+</span><span class='line'>
+</span><span class='line'>SELECT ?film ?label ?abstract ?director ?producer
+</span><span class='line'>WHERE {
+</span><span class='line'>  ?film rdf:type &lt;http://dbpedia.org/ontology/Film&gt;;
+</span><span class='line'>  dbpedia2:starring &lt;http://dbpedia.org/resource/Daniel_Craig&gt;.
+</span><span class='line'>  OPTIONAL {
+</span><span class='line'>      ?film rdfs:label ?label FILTER (lang(?label) = &#39;de&#39;).
+</span><span class='line'>      ?film dbpedia2:director ?director;
+</span><span class='line'>              dbpedia2:producer ?producer;
+</span><span class='line'>              dbpedia2:abstract ?abstract FILTER (lang(?abstract ) = &#39;de&#39;) .
+</span><span class='line'>      }
+</span><span class='line'>}
+</span><span class='line'>ORDER BY ?film
+</span></code></pre></td></tr></table></div></figure>
+
+
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-3/index.html" data-via="matthiasgeisler" data-counturl="http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-3/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/12/16/yeah-finally-the-internet-explorer-6-countdownmoving-the-world-off-internet-explorer-6/">Yeah! Finally... The Internet Explorer 6 Countdown
+Moving the world off Internet Explorer 6</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/04/wise-words-abouy-life-by-steve-jobs/">Wise Words abouy Life by Steve Jobs</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/22/was-bedeutet-ubuntu-eigentlich/">Was bedeutet Ubuntu eigentlich?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/13/wordle-net-word-cloud-from-del-icio-us-tags/">Wordle.net - word cloud from del.icio.us tags</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/11/little-big-berlin-awesome-tilt-shift-video/">"Little Big Berlin" - Awesome Tilt-shift Video</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("matthiasgeisler", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/matthiasgeisler" class="twitter-follow-button" data-show-count="false">Follow @matthiasgeisler</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/semanticdreamer?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/semanticdreamer">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Matthias Geisler -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'semanticdreamer';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-3/index.html';
+        var disqus_url = 'http://semanticdreamer.github.com/semantic-web-schnell-und-kompakt/beispiele-kapitel-3/index.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -17,17 +17,16 @@ footer: true
 	<!-- Start About Me -->
 	<div class="aboutme">
 		<h2>
-			About me
+			A little something about me.
 		</h2>
-		<p class="authorname">
-			Matthias Geisler
-		</p>
 		<div class="authordepiction">
-			<a class="url" href="http://matthiasgeisler.net/" rel="me"><img src="{{ root_url }}/wp-content/uploads/2009/10/matthias2_128x128.jpg" alt="Matthias Geisler" title="matthias2_128x128" width="105" height="105"/></a>
+			{% if site.gravatar_hash %}
+				<img src="http://gravatar.com/avatar/{{site.gravatar_hash}}" alt="Gravatar Image of Matthias Geisler" title="Gravatar Image of Matthias Geisler" class="authordepiction" />
+		    {% endif %}
 		</div>
 		<div class="authorinfos">
 			<p class="subline">
-				<a class="url" href="http://matthiasgeisler.net/" rel="me">I’m a Technical Architect/ Project Manager</a> <span class="adr">living and working in/ near <span class="locality">Donauwoerth</span>, <span class="country-name">Germany</span>.</span>
+				I'm  <a class="url" href="http://matthiasgeisler.net/" rel="me"><span class="fn n"><span class="given-name">Matthias</span> <span class="family-name">Geisler</span></span></a>, a Technical Architect and Project Manager</a> <span class="adr">living and working in/ near <span class="locality">Donauwoerth</span>, <span class="country-name">Germany</span>.</span>
 			</p>
 			<ul class="webprofiles">
 				<li><a href="http://www.xing.com/profile/Matthias_Geisler" rel="me"><img src="http://www.xing.com/img/buttons/9_de_btn.gif" alt="XING" height="15" width="80"></a></li>
@@ -40,19 +39,17 @@ footer: true
 <!-- Start About The Book -->
 <div class="aboutbook vevent">
 	<h2>
-		About my book<br>
+		I've written a book.<br>
 	</h2>
-	<p class="booktitle title summary">
-		Semantic Web schnell+kompakt
-	</p>
 	<div class="bookcover">
-		<a class="url" href="{{ root_url }}/semantic-web-schnell-und-kompakt/"><img src="http://entwickler-press.de/ep/ep_buecher/pspic/cover_normal/12/s_k_Semant4948cdb03caf0.jpg" alt="Semantic Web, entwickler.press, schnell + kompakt" width="134" height="214"></a>
+		<a href="http://entwickler-press.de/ep/psecom,id,2,buchid,185.html"><img src="http://entwickler-press.de/ep/ep_buecher/pspic/cover_normal/12/s_k_Semant4948cdb03caf0.jpg" alt="Semantic Web, entwickler.press, schnell + kompakt" width="134" height="214"></a>
 	</div>
 	<div class="bookinfos">
-		<p class="subline">
-			<a href="http://entwickler-press.de/ep/psecom,id,2,buchid,185.html">entwickler.press</a>
+		<p class="booktitle title summary">
+			Semantic Web schnell + kompakt
 		</p>
 		<ul class="bookfacts">
+		    <li class="publishing_house"><a href="http://entwickler-press.de/ep/psecom,id,2,buchid,185.html">entwickler.press</a></li>
 			<li class="pages">144 Seiten, Softcover
 			</li>
 			<li class="isbn">ISBN: 978-3-86802-028-1

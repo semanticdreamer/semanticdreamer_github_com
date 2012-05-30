@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Semantic Web schnell+kompakt Erratum"
+title: "Semantic Web schnell + kompakt Erratum"
 comments: true
 sharing: true
 footer: true

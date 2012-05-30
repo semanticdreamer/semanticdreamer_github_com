@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Semantic Web schnell+kompakt Beispiele Kapitel 3"
+title: "Semantic Web schnell + kompakt Beispiele Kapitel 3"
 comments: true
 sharing: true
 footer: true

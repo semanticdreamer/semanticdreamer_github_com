@@ -7,14 +7,14 @@ footer: true
 ---
 
 <h2>
-	"Semantic Web schnell+kompakt"
+	"Semantic Web schnell + kompakt"
 </h2>
 
 <h3>
 	Kurzinfo
 </h3>
 
-<p>{% img left http://entwickler-press.de/ep/ep_buecher/pspic/cover_normal/12/s_k_Semant4948cdb03caf0.jpg '"Semantic Web schnell+kompakt", Matthias Geisler, entwickler.press, 2009' 'Buchcover "Semantic Web schnell+kompakt", Matthias Geisler, entwickler.press, 2009' %}
+<p>{% img left http://entwickler-press.de/ep/ep_buecher/pspic/cover_normal/12/s_k_Semant4948cdb03caf0.jpg '"Semantic Web schnell + kompakt", Matthias Geisler, entwickler.press, 2009' 'Buchcover "Semantic Web schnell + kompakt", Matthias Geisler, entwickler.press, 2009' %}
 	Der Begriff "Semantic Web" beschreibt nicht eine einzelne Kerntechnologie, sondern vielmehr ein Konzept für die Symbiose aus mensch- und maschinenlesbarem Internet als Weiterentwicklung des heutigen WWW.
 </p>
 <p>

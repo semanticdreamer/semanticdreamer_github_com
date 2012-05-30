@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Semantic Web schnell+kompakt Beispiele Vorwort"
+title: "Semantic Web schnell + kompakt Beispiele Vorwort"
 comments: true
 sharing: true
 footer: true

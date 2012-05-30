@@ -1,3 +1,6 @@
 [submodule "vagrant-puppet"]
 	path = vagrant-puppet
 	url = git@github.com:semanticdreamer/vagrant-puppet-template.git
+[submodule "source/downloads/code/sw-sk-beispiele"]
+	path = source/downloads/code/sw-sk-beispiele
+	url = git@github.com:semanticdreamer/semantic-web-schnell-und-kompakt.git

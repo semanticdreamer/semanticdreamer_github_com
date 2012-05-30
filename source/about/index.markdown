@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "About"
-date: 2012-05-26 15:18
 comments: false
 sharing: true
 footer: true
@@ -47,7 +46,7 @@ footer: true
 		Semantic Web schnell+kompakt
 	</p>
 	<div class="bookcover">
-		<a class="url" href="http://semanticdreamer.com/semantic-web-schnell-und-kompakt/"><img src="http://entwickler-press.de/ep/ep_buecher/pspic/cover_normal/12/s_k_Semant4948cdb03caf0.jpg" alt="Semantic Web, entwickler.press, schnell + kompakt" width="134" height="214"></a>
+		<a class="url" href="{{ root_url }}/semantic-web-schnell-und-kompakt/"><img src="http://entwickler-press.de/ep/ep_buecher/pspic/cover_normal/12/s_k_Semant4948cdb03caf0.jpg" alt="Semantic Web, entwickler.press, schnell + kompakt" width="134" height="214"></a>
 	</div>
 	<div class="bookinfos">
 		<p class="subline">

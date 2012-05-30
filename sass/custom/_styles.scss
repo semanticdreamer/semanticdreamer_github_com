@@ -4,8 +4,9 @@
 .aboutme { clear: both;}
 .aboutme .authordepiction { float:left;}
 .aboutme .authorinfos { margin-left: 120px;}
-.aboutme .authorinfos .subline {}
-.aboutme .webprofiles li { padding: 1px 0px; list-style-type: none; display: inline; }
+.aboutme .authorinfos .subline { margin-bottom: 1em;}
+.aboutme .webprofiles { margin-left: 0em; }
+.aboutme .webprofiles li { list-style-type: none; display: inline; }
 .aboutme .authorname { font-weight: bold; font-style: italic; }
 
 .aboutbook { clear: both;}
@@ -15,3 +16,14 @@
 .aboutbook .bookfacts li { padding: 1px 0px; list-style-type: none; }
 .aboutbook .booktitle { font-weight: bold; font-style: italic; }
 .aboutbook .bookfacts li.isbn, .aboutbook .bookfacts li.bstatus {white-space: nowrap; }
+
+dl.erratum { width: 780px; margin: 2em 0; padding: 0;}
+dl.erratum dt {width: 100px; float: left; margin: 0 0 0 0; padding: .5em; border-top: 1px solid #999; font-weight: bold; }
+/* commented backslash hack for mac-ie5 \*/
+dl.erratum dt { clear: both; }
+/* end hack */
+dl.erratum dd {width: 640px; float: left; margin: 0 0 0 0; padding: .5em; border-top: 1px solid #999; }
+dl.erratum .falsch {background-color: #ff9397;}
+dl.erratum .richtig {background-color: #bcffc8;}
+
+footer { clear: both; }

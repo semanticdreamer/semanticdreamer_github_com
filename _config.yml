@@ -93,10 +93,14 @@ disqus_short_name: semanticdreamer
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-4435723-1
 
 # Facebook Like
 facebook_like: false
 
 # Gravatar plugin
 gravatar_hash: 1456d4f224c9518f05fa6c1b9186c739
+
+# Piwik Webanalytic
+piwik_site_id: 1
+piwik_server_name: piwik.semanticdreamer.com

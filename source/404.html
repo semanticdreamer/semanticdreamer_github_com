@@ -1,0 +1,27 @@
+---
+layout: page
+title: Error 404 (Not Found)
+footer: false
+---
+<p>This is not the web page you are looking for.</p>
+<p><strong>The requested URL was not found on this server.</strong></p>
+<ul>
+  <li>If you typed the URL directly, please make sure the spelling is correct.</li>
+  <li>If you clicked on a link to get here, the link is outdated.</li>
+</ul>
+
+<h2>What can you do?</h2>
+<ul>
+  <li><a onclick="history.go(-1);">Go back</a> to the previous page.</li>
+  <li>Use the search bar at the top of the page to search this website.</li>
+  <li>Start over: <a href="{{ root_url }}/">Blog</a></li>
+  <li>Check out recent posts:
+    <ul>
+      {% for post in site.posts limit: site.recent_posts %}
+        <li class="post">
+          <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </li>
+</ul>

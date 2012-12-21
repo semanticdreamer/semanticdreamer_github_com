@@ -100,7 +100,7 @@
   
 
 
-<time datetime="2010-02-19T00:00:00+00:00" pubdate data-updated="true">Feb 19<span>th</span>, 2010</time>
+<time datetime="2010-02-19T00:00:00+01:00" pubdate data-updated="true">Feb 19<span>th</span>, 2010</time>
         
       </p>
     
@@ -165,7 +165,7 @@
   
 
 
-<time datetime="2010-02-19T00:00:00+00:00" pubdate data-updated="true">Feb 19<span>th</span>, 2010</time>
+<time datetime="2010-02-19T00:00:00+01:00" pubdate data-updated="true">Feb 19<span>th</span>, 2010</time>
       
 
 
@@ -222,13 +222,6 @@
   
 </section>
 
-
-<section>
-  <h1>On Delicious</h1>
-  <div id="delicious"></div>
-  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/semanticdreamer?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
-  <p><a href="http://delicious.com/semanticdreamer">My Delicious Bookmarks &raquo;</a></p>
-</section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
@@ -258,6 +251,23 @@ Moving the world off Internet Explorer 6</a>
 </section>
 
 
+<section>
+  <h1>My Pinboard</h1>
+  <ul id="pinboard_linkroll">Fetching linkroll...</ul>
+  <p><a href="http://pinboard.in/u:semanticdreamer">My Pinboard Bookmarks &raquo;</a></p>
+</section>
+<script type="text/javascript">
+  var linkroll = 'pinboard_linkroll'; //id target for pinboard list
+  var pinboard_user = "semanticdreamer"; //id target for pinboard list
+  var pinboard_count = 3; //id target for pinboard list
+  (function(){
+    var pinboardInit = document.createElement('script');
+    pinboardInit.type = 'text/javascript';
+    pinboardInit.async = true;
+    pinboardInit.src = '/javascripts/pinboard.js';
+    document.getElementsByTagName('head')[0].appendChild(pinboardInit);
+  })();
+</script>
 
 
 

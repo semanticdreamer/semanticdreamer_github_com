@@ -104,7 +104,7 @@
   
 
 
-<time datetime="2006-12-05T00:00:00+00:00" pubdate data-updated="true">Dec 5<span>th</span>, 2006</time>
+<time datetime="2006-12-05T00:00:00+01:00" pubdate data-updated="true">Dec 5<span>th</span>, 2006</time>
         
       </p>
     
@@ -140,7 +140,7 @@
   
 
 
-<time datetime="2006-11-11T00:00:00+00:00" pubdate data-updated="true">Nov 11<span>th</span>, 2006</time>
+<time datetime="2006-11-11T00:00:00+01:00" pubdate data-updated="true">Nov 11<span>th</span>, 2006</time>
         
       </p>
     
@@ -176,7 +176,7 @@
   
 
 
-<time datetime="2006-10-17T00:00:00+00:00" pubdate data-updated="true">Oct 17<span>th</span>, 2006</time>
+<time datetime="2006-10-17T00:00:00+02:00" pubdate data-updated="true">Oct 17<span>th</span>, 2006</time>
         
       </p>
     
@@ -212,7 +212,7 @@
   
 
 
-<time datetime="2005-11-06T00:00:00+00:00" pubdate data-updated="true">Nov 6<span>th</span>, 2005</time>
+<time datetime="2005-11-06T00:00:00+01:00" pubdate data-updated="true">Nov 6<span>th</span>, 2005</time>
         
       </p>
     
@@ -248,7 +248,7 @@
   
 
 
-<time datetime="2004-12-04T00:00:00+00:00" pubdate data-updated="true">Dec 4<span>th</span>, 2004</time>
+<time datetime="2004-12-04T00:00:00+01:00" pubdate data-updated="true">Dec 4<span>th</span>, 2004</time>
         
       </p>
     
@@ -284,7 +284,7 @@
   
 
 
-<time datetime="2004-12-04T00:00:00+00:00" pubdate data-updated="true">Dec 4<span>th</span>, 2004</time>
+<time datetime="2004-12-04T00:00:00+01:00" pubdate data-updated="true">Dec 4<span>th</span>, 2004</time>
         
       </p>
     
@@ -320,7 +320,7 @@
   
 
 
-<time datetime="2004-03-15T00:00:00+00:00" pubdate data-updated="true">Mar 15<span>th</span>, 2004</time>
+<time datetime="2004-03-15T00:00:00+01:00" pubdate data-updated="true">Mar 15<span>th</span>, 2004</time>
         
       </p>
     
@@ -356,7 +356,7 @@
   
 
 
-<time datetime="2004-01-23T00:00:00+00:00" pubdate data-updated="true">Jan 23<span>rd</span>, 2004</time>
+<time datetime="2004-01-23T00:00:00+01:00" pubdate data-updated="true">Jan 23<span>rd</span>, 2004</time>
         
       </p>
     
@@ -402,13 +402,6 @@
   
 </section>
 
-
-<section>
-  <h1>On Delicious</h1>
-  <div id="delicious"></div>
-  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/semanticdreamer?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
-  <p><a href="http://delicious.com/semanticdreamer">My Delicious Bookmarks &raquo;</a></p>
-</section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
@@ -438,6 +431,23 @@ Moving the world off Internet Explorer 6</a>
 </section>
 
 
+<section>
+  <h1>My Pinboard</h1>
+  <ul id="pinboard_linkroll">Fetching linkroll&#8230;</ul>
+  <p><a href="http://pinboard.in/u:semanticdreamer">My Pinboard Bookmarks &raquo;</a></p>
+</section>
+<script type="text/javascript">
+  var linkroll = 'pinboard_linkroll'; //id target for pinboard list
+  var pinboard_user = "semanticdreamer"; //id target for pinboard list
+  var pinboard_count = 3; //id target for pinboard list
+  (function(){
+    var pinboardInit = document.createElement('script');
+    pinboardInit.type = 'text/javascript';
+    pinboardInit.async = true;
+    pinboardInit.src = '/javascripts/pinboard.js';
+    document.getElementsByTagName('head')[0].appendChild(pinboardInit);
+  })();
+</script>
 
 
 

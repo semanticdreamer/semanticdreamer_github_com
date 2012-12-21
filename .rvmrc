@@ -1,1 +1,2 @@
-rvm use 1.9.2
+#use ruby version, assure gemset exists
+rvm --create use ruby-1.9.3-p327@semanticdreamer.github.com > /dev/null
